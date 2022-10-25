@@ -1,0 +1,3 @@
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/hello.dir
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/edit_cache.dir
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/rebuild_cache.dir
