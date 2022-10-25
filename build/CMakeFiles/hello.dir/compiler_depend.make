@@ -26,8 +26,11 @@ CMakeFiles/hello.dir/main.c.o: /home/me/Projects/C/CMake_tutorial/main.c \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/floatn-common.h
+  /usr/include/bits/floatn-common.h \
+  hello.h
 
+
+hello.h:
 
 /usr/include/bits/floatn-common.h:
 
