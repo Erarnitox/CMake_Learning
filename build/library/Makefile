@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Projects/C/CMake_tutorial/build/CMakeFiles /home/me/Projects/C/CMake_tutorial/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/me/Projects/C/CMake_tutorial/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/me/Projects/C/CMake_tutorial/build/CMakeFiles /home/me/Projects/C/CMake_tutorial/build/library//CMakeFiles/progress.marks
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/me/Projects/C/CMake_tutorial/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/me/Projects/C/CMake_tutorial/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hello
+# Convenience name for target.
+library/CMakeFiles/library.dir/rule:
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/library.dir/rule
+.PHONY : library/CMakeFiles/library.dir/rule
 
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
-
-# fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
-
-#=============================================================================
-# Target rules for targets named library
-
-# Build rule for target.
-library: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library
+# Convenience name for target.
+library: library/CMakeFiles/library.dir/rule
 .PHONY : library
 
 # fast build rule for target.
 library/fast:
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/library.dir/build.make library/CMakeFiles/library.dir/build
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/library.dir/build.make library/CMakeFiles/library.dir/build
 .PHONY : library/fast
 
-main.o: main.c.o
-.PHONY : main.o
+library.o: library.c.o
+.PHONY : library.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.c.o
-.PHONY : main.c.o
+library.c.o:
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/library.dir/build.make library/CMakeFiles/library.dir/library.c.o
+.PHONY : library.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+library.i: library.c.i
+.PHONY : library.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.c.i
-.PHONY : main.c.i
+library.c.i:
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/library.dir/build.make library/CMakeFiles/library.dir/library.c.i
+.PHONY : library.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+library.s: library.c.s
+.PHONY : library.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.c.s
-.PHONY : main.c.s
+library.c.s:
+	cd /home/me/Projects/C/CMake_tutorial/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/library.dir/build.make library/CMakeFiles/library.dir/library.c.s
+.PHONY : library.c.s
 
 # Help Target
 help:
@@ -174,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello"
 	@echo "... library"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... library.o"
+	@echo "... library.i"
+	@echo "... library.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/me/Projects/C/CMake_tutorial/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

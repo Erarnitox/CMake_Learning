@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/me/Projects/C/CMake_tutorial/build -I/home/me/Projects/C/CMake_tutorial/library
+C_INCLUDES = 
 
 C_FLAGS = 
 
