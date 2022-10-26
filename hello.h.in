@@ -1,6 +1,8 @@
 #ifndef HELLO
 #define HELLO
 
+#cmakedefine USE_LIBRARY
+
 #define HELLO_VERSION_MAJOR @hello_VERSION_MAJOR@
 #define HELLO_VERSION_MINOR @hello_VERSION_MINOR@
 
