@@ -1,6 +1,14 @@
 /home/me/Projects/C/CMake_tutorial/build/CMakeFiles/hello.dir
 /home/me/Projects/C/CMake_tutorial/build/CMakeFiles/edit_cache.dir
 /home/me/Projects/C/CMake_tutorial/build/CMakeFiles/rebuild_cache.dir
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/list_install_components.dir
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/install.dir
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/install/local.dir
+/home/me/Projects/C/CMake_tutorial/build/CMakeFiles/install/strip.dir
 /home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/library.dir
 /home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/edit_cache.dir
 /home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/rebuild_cache.dir
+/home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/list_install_components.dir
+/home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/install.dir
+/home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/install/local.dir
+/home/me/Projects/C/CMake_tutorial/build/library/CMakeFiles/install/strip.dir

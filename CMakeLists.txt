@@ -29,6 +29,8 @@ target_include_directories(hello PUBLIC
 target_link_libraries(hello PUBLIC ${EXTRA_LIBS} compiler_flags) 
 target_include_directories(hello PUBLIC "${PROJECT_BINARY_DIR}")
 
+install(TARGETS hello DESTINATION bin)
+
 # set(CMAKE_C_STANDARD 90) # ANSI-C all the way!
 # set(CMAKE_C_STANDARD_REQUIRED True)
 
